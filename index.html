@@ -10,7 +10,7 @@
 -->
 <html>
 	<head>
-		<title>meathic</title>
+		<title>Meathic</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -31,7 +31,7 @@
 					<img src="images/cow5.jpg" alt="" />
 					<div class="inner">
 						<header>
-							<h2>A  <span class="meatTitle" style="color: #FF4464;">meat</span>hic story in EU</h2>
+							<h2>A  <span class="meatTitle" style="color: #FF4464;">Meat</span>hic Story of Europe</h2>
 						</header>
 					</div>
 				</article>
@@ -46,19 +46,18 @@
 					<div class="gallery">
 
 						<div class="content">
-							<p>
-Climate change is one of today's biggest challenges. Agriculture is an important contributor to climate change, notably meat production.
-Meat can be very expensive in terms of resources to produce: it takes 15'415 liters of water for a single kilogram of beef, and
-reducing meat consumption would be a desirable goal. <br />
+							<p style="text-align: center;font-size: 1.2rem;">
+<span class="meatTitle" style="color: #FF4464;">Climate change</span> is one of today's biggest challenges. Agriculture is an important contributor to climate change, notably meat production.
+Meat can be very expensive in terms of resources to produce: it takes <span class="meatTitle" style="color: #FF4464;">15'415 liters</span> of water for a single kilogram of beef, and
+reducing meat consumption would be a desirable goal. <br /><br />
 In this project, we aim to see if we can determine some of the drivers behind people's meat consumption.
-We first take a look at the general meat consumption in Europe: <br />
--What is the overall trend ? Who are the biggest meat eaters ? Is there a difference between types of meat ? <br />
+We first take a look at the general meat consumption in <span class="meatTitle" style="color: #FF4464;">Europe</span>: <br />
+-What is the overall trend ? Who are the biggest meat eaters ? Is there a difference between types of meat ? <br /><br />
 We then try to determine whether certain factors can be associated with meat consumption. <br />
 -Is the economic situation of a country, such as wealth or recession, related to consumption ? <br />
-And by delving deeper into a specific country, France: <br />
+And by delving deeper into a specific country, <span class="meatTitle" style="color: #FF4464;">France</span>: <br /><br />
 -Does the price of meat have an impact on meat consumption ? Is there difference between types of meat ? Does unemployment (as a proxy for recessions) ? <br />
--Can we see an association with global warming related events, such as conferences ? <br />
-Finally, we try to use these values to predict meat consumption (MAYBE).</p>
+-Can we see an association with global warming related events, such as conferences ? <br /></p>
 						</div>
 
 						<div >
@@ -75,7 +74,7 @@ Finally, we try to use these values to predict meat consumption (MAYBE).</p>
 			<section id="one" class="wrapper style2">
 				<div class="inner">
 					<header class="align-center">
-						<p class="special">Part 1 : Meat Consumption in the EU</p>
+						<p class="special" style="color: #2B2B2B;">Part 1 : Meat Consumption in the EU</p>
 					</header>
 					<div class="grid-style">
 
@@ -110,24 +109,31 @@ Finally, we try to use these values to predict meat consumption (MAYBE).</p>
 
 
 			<!--//===============================================================debut part2====================================================================== -->
-			<section id="three" class="wrapper style2" style="background-color: #2b2b2b;">
+			<section id="three" class="wrapper style2" style="background-color: #2B2B2B;color: #FFFFFF;">
 				<div class="inner">
 					<header class="align-center">
 						<p class="special">Part 2 : Economic Situation</p>
 					</header>
-
-					<!--first map with text -->
-					<div class="gallery">
-						<div class="content">
-							<header class="align-center">
-								<p>Wealth and Meat Consumption in Europe</p>
-							</header>
-							<p>
+				</div>
+				<div class="content">
+					<header class="align-center">
+						<p>Wealth and Meat Consumption in Europe</p>
+					</header>
+					<p style="width:70%;margin-left:15%">
 As meat is typically expensive, we could expect an association between the wealth of a country and its meat consumption. We use GDP per capita to measure country wealth, and our data is from the OECD (https://data.oecd.org/gdp/gross-domestic-product-gdp.htm).
 Let us first plot the GDP per capita over the last ten years. <br />
 -CHANGE GRAPH FONTS
-							</p>
-						</div>
+					</p>
+				</div>
+
+			</section>
+
+			<section id="three" class="wrapper style2" style="background-color: #F2F2F2;color: #2B2B2B;">
+				<div class="inner">
+
+					<!--first map with text -->
+					<div class="gallery">
+
 						<div >
 							<div class="image fit" style="background-color: rgba(0,0,0,0);">
 								<iframe id="map_gdp" style="background-color: rgba(0,0,0,0);" frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="1000" src="graphs/economy/map_gdp.html"></iframe>
@@ -142,7 +148,8 @@ Let's plot the meat consumption per gdp per capita, for all countries and all da
 						</div>
 					</div>
 				</div>
-
+			</section>
+			<section id="three" class="wrapper style2" style="background-color: #2B2B2B;">
 
 				<!--interpolation with text -->
 				<div class="inner">
@@ -216,8 +223,8 @@ Our conclusion is that changes in wealth has a small impact in the short term, b
 
 
 			<!--//===============================================================debut part3====================================================================== -->
-			<section id="two" class="wrapper style3" style="padding: 3rem 0 2rem 0;">
-				<div class="inner">
+			<section id="one" class="wrapper style3" style="padding: 3rem 0 2rem 0;background-image: url('images/bg.png')">
+				<div class="inner" >
 					<header class="align-center">
 						<p>Part 3</p>
 						<h2>France</h2>
@@ -228,9 +235,8 @@ Our conclusion is that changes in wealth has a small impact in the short term, b
 			<section id="three" class="wrapper style2" style="background-color: #2b2b2b;padding-bottom:30;">
 				<div class="content" style="margin-left:10%;margin-right:10%;">
 					<header class="align-center" >
-						<p>Meat Price and Meat Consumption</p>
-						<p>----- CONSOMMATION DE VIANDE EN FRANCE, PAR HABITANT ----Cras aliquet urna ut sapien tincidunt, quis malesuada elit facilisis. Vestibulum sit amet tortor velit. Nam elementum nibh a libero pharetra elementum. Maecenas feugiat ex purus, quis volutpat lacus placerat malesuada.</p>
-
+						<p>Economic Considerations: Meat Price and Unemployment</p>
+						
 					</header>
 				</div>
 
@@ -255,13 +261,11 @@ Our conclusion is that changes in wealth has a small impact in the short term, b
 							<div class="box" style="width:30%;border-radius: 5px;background-color: rgba(0,0,0,0);margin-left:3%;color: #F2F2F2;">
 								<div class="content" >
 									<header class="align-center">
-										<p style="color: #F2F2F2;">mattis elementum sapien pretium tellus</p>
-										<h2 style="color: #F2F2F2;">PRIX DE DIFFERENTS VIANDES EN FRANCE, NE SAIT PAS DOUVIENT LES DONNER DONC VOIR AVEC ASLAM </h2>
+										<h2 style="color: #F2F2F2;">Price of different meat types in France</h2>
 									</header>
 									<p>
--Plot beef, pork, chicken consumption also so we can see if there is a relation to price <br />
--Mention source of data <br />
-
+We can note the main pattern in the consumption of meat is a drop following 2008. 
+We do not see the same pattern for meat prices, which tend rather to oscillate.
 									</p>
 								</div>
 							</div>
@@ -286,11 +290,11 @@ Our conclusion is that changes in wealth has a small impact in the short term, b
 							<div class="box" style="width:30%;border-radius: 5px;background-color: #FFE5E5">
 								<div class="content">
 									<header class="align-center">
-										<p>mattis elementum sapien pretium tellus</p>
-										<h2>"Nombre moyen de demandeurs d'emploi inscrits sur le trimestre à Pôle emploi - Catégories A	 B	 C	 D et E (ensemble des catégories) - France métropolitaine - Série brute" EM MILLIER</h2>
+										<h2>Economic considerations could explain the drop in meat consumption in France in 2008</h2>
 									</header>
 									<p>
--To keep depending on if we treat unemployement in previous section <br />
+We see a sharp increase after 2008 in the number of job seekers, which we consider as a proxy for the overall economic health of the country. 
+This means that the drop, rather than being related to meat price, is likely related to increased poverty following the 2008 economic crisis.
 									</p>
 								</div>
 							</div>
@@ -310,7 +314,7 @@ Our conclusion is that changes in wealth has a small impact in the short term, b
 					</header>
 									<p>
 We now look to see if we can find a relation between interest in climate change and global warming and meat consumption in France. We could expect a higher interest to mean less consumption.
-We estimate the interest by using google trends, with keywords for "climate change" and "global warming". Let us plot these results along with annotations for important dates.
+We estimate the interest in climate change by using google trends, with search keywords for "climate change" and "global warming". Let us plot these results along with annotations for important dates and average meat meat consumption in France.
 									</p>
 						<div style="background-color: #2b2b2b;">
 							<div class="box" style="background-color: #2b2b2b;">
@@ -319,8 +323,12 @@ We estimate the interest by using google trends, with keywords for "climate chan
 								</div>
 							</div>
 									<p>
-We see a clear relation between interest and climate change related events.
-Let us now plot meat consumption also.
+We first see a clear relation between interest and climate change related events such as the COP.
+But we can also note that meat consumption and interest move close together, altough the overall consumption is fairly stable.
+This is a curious result: the higher the interest in climate change, the more meat consumption, how can we explain this ?
+This is most likely due to another factor, the economic situation around the same period.
+Our conclusion is that the change in meat consumption in that period was most likely due to the economic crisis, and that environmental interest did not translate into a change of meat consumption.
+Let us now see if we can identify a different tendency when looking at different types of meat.
 									</p>
 						</div>
 						<div>
@@ -344,10 +352,16 @@ Let us now plot meat consumption also.
 								<div class="box" style="background-color: #2b2b2b;">
 									<div class="content">
 										<header class="align-center">
-											<p>Google trend comparison with meat consumption per category</p>
-											<h2>Salut salut</h2>
+											<p>Interest in climate change and meat consumption for different types of meat</p>
 										</header>
-										<p> Cras aliquet urna ut sapien tincidunt, quis malesuada elit facilisis. Vestibulum sit amet tortor velit. Nam elementum nibh a libero pharetra elementum. Maecenas feugiat ex purus, quis volutpat lacus placerat malesuada.</p>
+										<p>
+Beef shows the strongest relation with climate change interest, and the change in consumption is actually fairly large, at almost 15%.
+Poultry consumption, on the other hand, always increases, with an increase over the period of around 20%
+Pork shows a fairly stable consumption, with maximum change of about 6%.
+This is in accordance with our intuition that the driver is mostly economical.
+Beef should show the largest decline with increased climate change interest as it is the most environmentally taxing; but we see the opposite.
+That beef shows the largest decline is then most likely related to the fact that it is the most expensive.
+										</p>
 									</div>
 								</div>
 							</div>
@@ -371,9 +385,13 @@ Let us now plot meat consumption also.
 								<div class="content">
 									<header class="align-center">
 										<p>Analyse coverage of climate change in French media</p>
-										<h2>Vestibulum sit amet</h2>
 									</header>
-									<p> Cras aliquet urna ut sapien tincidunt, quis malesuada elit facilisis. Vestibulum sit amet tortor velit. Nam elementum nibh a libero pharetra elementum. Maecenas feugiat ex purus, quis volutpat lacus placerat malesuada.</p>
+									<p> 
+In this final section we look into the relation between meat consumption and climate change related coverage in two large French journals, Le Monde and Le Figaro. <br />
+-INTEREST ? <br />
+We can see that the journal coverage pattern is similar to the climage change interest.
+On other hand, it does most likely does not drive in change in meat consumption, for the same reasons as in the previous section.
+									</p>
 								</div>
 							</div>
 						</div>
@@ -394,6 +412,24 @@ Let us now plot meat consumption also.
 
 
 			<!--//===============================================================fin part3 aslam====================================================================== -->
+			<section id="one" class="wrapper style2" style="background-color: #2b2b2b;">
+				<div class="content">
+					<header class="align-center">
+						<p class="special">Conclusion</p>
+					</header>
+					<p style="text-align: center;">
+
+Meat consumption is an important consideration to tackle climate change.
+We have looked into meat consumption in Europe and France, and its association with different factors that could impact consumption. We have made the following observations: <br />
+-DESCRIPTION FOR PART 1 <br />
+-We have seen that wealth and economic considerations play a role in determining people's consumption, but mostly in the long term, and that a fast change in wealth does not quickly affect meat consumption <br />
+-DESCRIPTION FOR PART 3 <br />
+-That in France at least, meat consumption does not seem to be clearly related to interest in climate change <br />
+-That people's interest in climate change is fairly related to news coverage <br />
+
+					</p>
+				</div>
+			</section>
 
 		<!-- Footer -->
 			<footer id="footer">
