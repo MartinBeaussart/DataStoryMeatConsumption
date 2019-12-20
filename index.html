@@ -46,9 +46,9 @@
 					<div class="gallery">
 
 						<div class="content">
-							<p> 
+							<p>
 Climate change is one of today's biggest challenge. Agriculture is an important contributor to climate change, notably meat consumption.
-Meat can be very expensive in terms of resources to produce: it takes 15'415 liters of water for a single kilogram of beef, and 
+Meat can be very expensive in terms of resources to produce: it takes 15'415 liters of water for a single kilogram of beef, and
 reducing meat consumption would be a desirable goal. <br />
 In this project, we aim to see if we can determine some of the drivers behind people's meat consumption.
 We first take a look at the general meat consumption in Europe: <br />
@@ -93,7 +93,7 @@ Finally, we try to use these values to predict meat consumption (MAYBE).</p>
 										<p>Amattis elementum sapien pretium tellus</p>
 										<h2>Gaph meat consumption every country (cumul)</h2>
 									</header>
-									<p> 
+									<p>
 -Some results about meat consumption in eu, for instance:  <br />
 -Histogram on meat consumption in 2013; who are highest and lowest consummers  <br />
 -A plot with the different types of meat (beef, pig, chicken)  <br />
@@ -124,7 +124,7 @@ Finally, we try to use these values to predict meat consumption (MAYBE).</p>
 							</header>
 							<p>
 As meat is typically expensive, we could expect an association between the wealth of a country and its meat consumption. We use GDP per capita to measure country wealth, and our data is from the OECD (link?).
-Let us first plot the GDP per capita over the last ten years. <br /> 
+Let us first plot the GDP per capita over the last ten years. <br />
 -CHANGE GRAPH FONTS
 							</p>
 						</div>
@@ -155,7 +155,7 @@ Let's plot the meat consumption per gdp per capita, for all countries and all da
 						<div class="content">
 							<p>
 
-We see what seems like a fairly strong correlation between gdp and meat consumption, with a correlation of VALUE and R-squared value of 0.3. 
+We see what seems like a fairly strong correlation between gdp and meat consumption, with a correlation of VALUE and R-squared value of 0.3.
 From the regression line, we could roughly expect an increase of VALUE of meat consumption per VALUE increase of GDP per capita.
 This picture is however not quite right; we now plot the result also by year, and additionally group countries by clustering using k-means, with 3 clusters. <br />
 -INCREASE FONT SIZE IF POSSIBLE AND ADD AXIS LABEL FOR GRAPH
@@ -178,14 +178,14 @@ This picture is however not quite right; we now plot the result also by year, an
 							<p>
 We can first note that the clustering is meaningful: the first group corresponds roughly to poorer countries (mostly eastern),the second group to richer EU countries, and the third to luxembourg.
 These groupings are also stable through time, with essentially only Spain and Greece moving from group 2 to group 1, which makes sense as these two countries have been particularly hit by the 2008 economic crisis.
-The poorer consume on average less meat than the richer countries, 69.69 vs 86.31 kg per capita in 2004. 
+The poorer consume on average less meat than the richer countries, 69.69 vs 86.31 kg per capita in 2004.
 We can also see that poorer countries show a stronger variation, with 50 for Bulgaria and 90 for Hungary, whereas richer countries are more similar.
-Within these groupes, however, consumption does not increase much with time: the average for poor countries is 70.834 in 2013 and 86.97 for richer countries in 2013. 
+Within these groupes, however, consumption does not increase much with time: the average for poor countries is 70.834 in 2013 and 86.97 for richer countries in 2013.
 This is despite the average GDP per capita increasing by almost 75% for poor countries and 39% for richer countries.
 How can we explain this result, seemingly paradoxical compared to the correlation we computed ? <br />
--Countries that have been rich for longer eat more meat; but countries do not change their meat consumption by much, even as their income can grow quite fast <br /> 
--This seems to indicate that meat consumption has a fairly high cultural/habits component to it <br /> 
--Does economic situation still play a role ? <br /> 
+-Countries that have been rich for longer eat more meat; but countries do not change their meat consumption by much, even as their income can grow quite fast <br />
+-This seems to indicate that meat consumption has a fairly high cultural/habits component to it <br />
+-Does economic situation still play a role ? <br />
 -We know from the first graph that meat consumption went down around 2007; which corresponds to the economic crisis, so we suspect economic considerations <br />
 -ADD GRAPHS COMBINING ECO INFORMATION (maybe growth or unemployment) AND AVERAGE MEAT CONSUMPTION; HOPEFULLY WE CAN SEE THAT THE CURVES ARE SIMILAR
 
@@ -254,8 +254,8 @@ How can we explain this result, seemingly paradoxical compared to the correlatio
 										<h2 style="color: #F2F2F2;">PRIX DE DIFFERENTS VIANDES EN FRANCE, NE SAIT PAS DOUVIENT LES DONNER DONC VOIR AVEC ASLAM </h2>
 									</header>
 									<p>
--Plot beef, pork, chicken consumption also so we can see if there is a relation to price <br /> 
--Mention source of data <br /> 
+-Plot beef, pork, chicken consumption also so we can see if there is a relation to price <br />
+-Mention source of data <br />
 
 									</p>
 								</div>
@@ -285,7 +285,7 @@ How can we explain this result, seemingly paradoxical compared to the correlatio
 										<h2>"Nombre moyen de demandeurs d'emploi inscrits sur le trimestre à Pôle emploi - Catégories A	 B	 C	 D et E (ensemble des catégories) - France métropolitaine - Série brute" EM MILLIER</h2>
 									</header>
 									<p>
--To keep depending on if we treat unemployement in previous section <br /> 
+-To keep depending on if we treat unemployement in previous section <br />
 									</p>
 								</div>
 							</div>
@@ -309,14 +309,46 @@ How can we explain this result, seemingly paradoxical compared to the correlatio
 								</div>
 							</div>
 									<p>
--Detail methodology a bit for google trends <br /> 
--Add subplots with overall meat consumption and for the 3 types of meat <br /> 
+-Detail methodology a bit for google trends <br />
+-Add subplots with overall meat consumption and for the 3 types of meat <br />
 									</p>
 						</div>
 						<div>
 					</div>
-
 			</section>
+
+				<section id="one" class="wrapper style2" style="background-color: #2b2b2b;">
+					<div class="inner">
+						<div class="grid-style">
+
+							<div style="width:70%;background-color: #2b2b2b;">
+								<div class="box" style="background-color: #2b2b2b;">
+									<div class="image fit">
+										<iframe id="GoogleTrendComparison"   width="100%" height="700"src="graphs/Part3/GoogleTrendComparison.html"></iframe>
+									</div>
+
+								</div>
+							</div>
+
+							<div style="width:30%;background-color: #2b2b2b;">
+								<div class="box" style="background-color: #2b2b2b;">
+									<div class="content">
+										<header class="align-center">
+											<p>Google trend comparison with meat consumption per category</p>
+											<h2>Salut salut</h2>
+										</header>
+										<p> Cras aliquet urna ut sapien tincidunt, quis malesuada elit facilisis. Vestibulum sit amet tortor velit. Nam elementum nibh a libero pharetra elementum. Maecenas feugiat ex purus, quis volutpat lacus placerat malesuada.</p>
+									</div>
+								</div>
+							</div>
+
+
+						</div>
+					</div>
+				</section>
+
+
+
 
 
 			<section id="one" class="wrapper style2">
