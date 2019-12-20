@@ -113,20 +113,19 @@ Finally, we try to use these values to predict meat consumption (MAYBE).</p>
 			<section id="three" class="wrapper style2" style="background-color: #2b2b2b;">
 				<div class="inner">
 					<header class="align-center">
-						<p class="special">Part 2 : Economic Situatsssion</p>
+						<p class="special">Part 2 : Economic Situation</p>
 					</header>
 
 					<!--first map with text -->
 					<div class="gallery">
 						<div class="content">
 							<header class="align-center">
-								<p>The Gross Domestic Product in Europe</p>
+								<p>Wealth and Meat Consumption in Europe</p>
 							</header>
 							<p>
--Country wealth my be a factor for meat consumption <br /> 
--Plot for EU countries <br /> 
--Data from OECD (link) <br /> 
--CHANGE GRAPH FONTS <br /> 
+As meat is typically expensive, we could expect an association between the wealth of a country and its meat consumption. We use GDP per capita to measure country wealth, and our data is from the OECD (link?).
+Let us first plot the GDP per capita over the last ten years. <br /> 
+-CHANGE GRAPH FONTS
 							</p>
 						</div>
 						<div >
@@ -136,8 +135,9 @@ Finally, we try to use these values to predict meat consumption (MAYBE).</p>
 						</div>
 						<div class="content">
 							<p>
--We can see that GDP has been growing for all countries
--How does this relate to their meat consumption ?
+We can see that GDP per capita has been growing for all countries. Do we also see an increase in meat consumption ?
+Let's plot the meat consumption per gdp per capita, for all countries and all dates from 2004 to 2013 <br />
+-INCREASE FONT SIZE IF POSSIBLE AND ADD AXIS LABEL FOR GRAPH
 							</p>
 						</div>
 					</div>
@@ -147,12 +147,6 @@ Finally, we try to use these values to predict meat consumption (MAYBE).</p>
 				<!--interpolation with text -->
 				<div class="inner">
 					<div class="gallery">
-						<div class="content">
-							<p>
--Let us first plot the meat consumption per gdp per capita, for all countries and all dates from 2004 to 2013 <br />
--INCREASE FONT SIZE IF POSSIBLE AND ADD AXIS LABEL <br />
-							</p>
-						</div>
 						<div >
 							<div class="image fit" style="background-color: rgba(0,0,0,0);">
 								<iframe id="map_gdp" style="background-color: rgba(0,0,0,0);" frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="650" src="graphs/economy/interpolation.html"></iframe>
@@ -161,13 +155,10 @@ Finally, we try to use these values to predict meat consumption (MAYBE).</p>
 						<div class="content">
 							<p>
 
--We see what seems like a fairly strong correlation between gdp and meat consumption <br />
--R2 is BLA, corr is BLA, and from a regression, we could expect an increase in meat consumption of X per income <br />
--This picture is however not quite right <br />
-<br />
--Let use plot it now for every year <br />
--We additionally do some simple clustering on the countries in 3 groups by using kmeans <br />
--INCREASE FONT SIZE IF POSSIBLE AND ADD AXIS LABEL <br />
+We see what seems like a fairly strong correlation between gdp and meat consumption, with a correlation of VALUE and R-squared value of 0.3. 
+From the regression line, we could roughly expect an increase of VALUE of meat consumption per VALUE increase of GDP per capita.
+This picture is however not quite right; we now plot the result also by year, and additionally do a simple clustering on the countries using k-means, with 3 clusters. <br />
+-INCREASE FONT SIZE IF POSSIBLE AND ADD AXIS LABEL FOR GRAPH
 							</p>
 						</div>
 					</div>
