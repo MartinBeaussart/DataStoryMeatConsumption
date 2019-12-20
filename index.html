@@ -46,18 +46,18 @@
 					<div class="gallery">
 
 						<div class="content">
-							<p style="text-align: center;font-size: 1.2rem;">
+							<p style="text-align: justify; text-align-last: center;font-size: 1.2rem;">
 <span class="meatTitle" style="color: #FF4464;">Climate change</span> is one of today's biggest challenges. Agriculture is an important contributor to climate change, notably meat production.
 Meat can be very expensive in terms of resources to produce: it takes <span class="meatTitle" style="color: #FF4464;">15'415 liters</span> of water for a single kilogram of beef, and
 reducing meat consumption would be a desirable goal. <br /><br />
 In this project, we aim to see if we can determine some of the drivers behind people's meat consumption.
-We first take a look at the general meat consumption in <span class="meatTitle" style="color: #FF4464;">Europe</span>: <br />
--What is the overall trend ? Who are the biggest meat eaters ? Is there a difference between types of meat ? <br /><br />
+We look at the general meat consumption in <span class="meatTitle" style="color: #FF4464;">Europe</span>: <br />
+-What is the overall trend ? Who are the biggest meat eaters ? <br /><br />
 We then try to determine whether certain factors can be associated with meat consumption. <br />
--Is the economic situation of a country, such as wealth or recession, related to consumption ? <br />
-And by delving deeper into a specific country, <span class="meatTitle" style="color: #FF4464;">France</span>: <br /><br />
--Does the price of meat have an impact on meat consumption ? Is there difference between types of meat ? Does unemployment (as a proxy for recessions) ? <br />
--Can we see an association with global warming related events, such as conferences ? <br /></p>
+-Is the economic situation of a country, such as wealth or a recession, related to meat consumption ? <br />
+And by delving deeper into a specific country, <span class="meatTitle" style="color: #FF4464;">France</span>: <br />
+-Does the price of meat have an impact on meat consumption ? Does unemployment (as a proxy for recessions) ? <br />
+-Can we see an association with interest in climate change and global warming, or their coverage in the press ? <br /></p>
 						</div>
 
 						<div >
@@ -120,9 +120,8 @@ And by delving deeper into a specific country, <span class="meatTitle" style="co
 						<p>Wealth and Meat Consumption in Europe</p>
 					</header>
 					<p style="width:70%;margin-left:15%">
-As meat is typically expensive, we could expect an association between the wealth of a country and its meat consumption. We use GDP per capita to measure country wealth, and our data is from the OECD (https://data.oecd.org/gdp/gross-domestic-product-gdp.htm).
+As meat is typically expensive, we could expect an association between the wealth of a country and its meat consumption. We use GDP per capita to measure country wealth, and our data is from the <a style="color: #FF4464;" href="https://data.oecd.org/gdp/gross-domestic-product-gdp.htm">OECD</a>.
 Let us first plot the GDP per capita over the last ten years. <br />
--CHANGE GRAPH FONTS
 					</p>
 				</div>
 
@@ -139,11 +138,10 @@ Let us first plot the GDP per capita over the last ten years. <br />
 								<iframe id="map_gdp" style="background-color: rgba(0,0,0,0);" frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="1000" src="graphs/economy/map_gdp.html"></iframe>
 							</div>
 						</div>
-						<div class="content">
+						<div class="content" style="width:70%;margin-left:15%;margin-top:50px;color: #FF4464;font-size: 1.2rem;">
 							<p>
 We can see that GDP per capita has been growing for all countries. Do we also see an increase in meat consumption ?
 Let's plot the meat consumption per gdp per capita, for all countries and all dates from 2004 to 2013. <br />
--INCREASE FONT SIZE IF POSSIBLE AND ADD AXIS LABEL FOR GRAPH
 							</p>
 						</div>
 					</div>
@@ -159,13 +157,11 @@ Let's plot the meat consumption per gdp per capita, for all countries and all da
 								<iframe id="map_gdp" style="background-color: rgba(0,0,0,0);" frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="650" src="graphs/economy/interpolation.html"></iframe>
 							</div>
 						</div>
-						<div class="content">
+						<div class="content" style="width:70%;margin-left:15%;">
 							<p>
-
-We see what seems like a fairly strong correlation between gdp and meat consumption, with a correlation of VALUE and R-squared value of 0.3.
-From the regression line, we could roughly expect an increase of VALUE of meat consumption per VALUE increase of GDP per capita.
-This picture is however not quite right; we now plot the result also by year, and additionally group countries by clustering using k-means, with 3 clusters. <br />
--INCREASE FONT SIZE IF POSSIBLE AND ADD AXIS LABEL FOR GRAPH
+We see what seems like a <span class="meatTitle" style="color: #FF4464;">fairly strong correlation</span> between gdp and meat consumption, with R-squared value of 0.3 for degree 1 and 0.38 for degree 3.
+From the degree 1 regression line, we could roughly expect an increase of 0.004 of meat consumption per increase of GDP per capita.<br /><br />
+This picture is however not quite right; we now plot the result also by year, and additionally group countries by <span class="meatTitle" style="color: #FF4464;">clustering</span> using k-means, with 3 clusters. <br />
 							</p>
 						</div>
 					</div>
@@ -181,23 +177,21 @@ This picture is however not quite right; we now plot the result also by year, an
 							</div>
 						</div>
 
-						<div class="content">
+						<div class="content" style="margin-top: 50px;width:80%;margin-left:10%;text-align: justify; text-align-last: center;">
 							<p>
-We can first note that the clustering is meaningful: the first group corresponds roughly to poorer countries (mostly eastern),the second group to richer EU countries, and the third to Luxembourg.
-These groupings are also stable through time, with essentially only Spain and Greece moving from group 2 to group 1, which makes sense as these two countries have been particularly hit by the 2008 economic crisis.
-The poorer group consumes on average less meat than the richer countries, 69.69 vs 86.31 kg per capita in 2004.
+We can first note that the clustering is meaningful: the first group corresponds roughly to poorer countries (mostly eastern), the second group to richer EU countries, and the third to Luxembourg.
+These groupings are also stable through time, with essentially only Spain and Greece moving from group 2 to group 1, which makes sense as these two countries have been particularly hit by the <span class="meatTitle" style="color: #FF4464;">2008 economic crisis</span>.
+<br /><br />The poorer group consumes on average less meat than the richer countries, <span class="meatTitle" style="color: #FF4464;">69.69 vs 86.31 kg per capita</span> in 2004.
 We can also see that poorer countries show a stronger variation, with 50 for Bulgaria and 90 for Hungary, whereas richer countries are more similar.
-Within these groupes, however, consumption does not increase much with time: the average for poor countries is 70.834 in 2013 and 86.97 for richer countries in 2013.
-This is despite the average GDP per capita increasing by almost 75% for poor countries and 39% for richer countries.
-How can we explain this result, seemingly paradoxical compared to the correlation we computed ? <br />
+Within these groups, however, consumption does not increase much with time: the average for poor countries is 70.834 in 2013 and 86.97 for richer countries in 2013.
+This is despite the average GDP per capita increasing by almost <span class="meatTitle" style="color: #FF4464;">75%</span> for poor countries and <span class="meatTitle" style="color: #FF4464;">39%</span> for richer countries.
+<br />How can we explain this result, seemingly paradoxical compared to the previous correlation ? <br /><br />
+
 We note that countries that have been rich for longer eat more meat; but countries do not change their meat consumption by much, even as their income can grow quite fast.
-This can mean that wealth impacts meat consumption in the long term but not in the short term, which can depend more on non-economic factors such as cultural habits.
-Can a short term change in economic situation still impact meat consumption ? Let us retake our first average meat consumption graph and add OTHER VALUE.<br />
-<br />
--ADD GRAPHS COMBINING ECO INFORMATION (maybe growth or unemployment) AND AVERAGE MEAT CONSUMPTION; HOPEFULLY WE CAN SEE THAT THE CURVES ARE SIMILAR<br />
-<br />
+This can mean that wealth impacts meat consumption in the long term but not in the short term, which can depend more on non-economic factors such as <span class="meatTitle" style="color: #FF4464;">cultural habits</span>.
+Can a short term change in economic situation still impact meat consumption ? Let us retake our first average meat consumption graph.
 We can see that average consumption increased until 2007, then decreased; this period corresponds to the economic crisis in Europe. The change in consumption is however not very large.
-Our conclusion is that changes in wealth has a small impact in the short term, but potentially significant in the long term, with more wealth leading to higher meat consumption.
+Our conclusion is that changes in wealth has a <span class="meatTitle" style="color: #FF4464;">small impact in the short term</span>, but <span class="meatTitle" style="color: #FF4464;">potentially significant in the long term</span>, with more wealth leading to higher meat consumption.
 
 
 
@@ -235,8 +229,7 @@ Our conclusion is that changes in wealth has a small impact in the short term, b
 			<section id="three" class="wrapper style2" style="background-color: #2b2b2b;padding-bottom:30;">
 				<div class="content" style="margin-left:10%;margin-right:10%;">
 					<header class="align-center" >
-						<p>Economic Considerations: Meat Price and Unemployment</p>
-						
+
 					</header>
 				</div>
 
@@ -264,7 +257,7 @@ Our conclusion is that changes in wealth has a small impact in the short term, b
 										<h2 style="color: #F2F2F2;">Price of different meat types in France</h2>
 									</header>
 									<p>
-We can note the main pattern in the consumption of meat is a drop following 2008. 
+We can note the main pattern in the consumption of meat is a drop following 2008.
 We do not see the same pattern for meat prices, which tend rather to oscillate.
 									</p>
 								</div>
@@ -293,7 +286,7 @@ We do not see the same pattern for meat prices, which tend rather to oscillate.
 										<h2>Economic considerations could explain the drop in meat consumption in France in 2008</h2>
 									</header>
 									<p>
-We see a sharp increase after 2008 in the number of job seekers, which we consider as a proxy for the overall economic health of the country. 
+We see a sharp increase after 2008 in the number of job seekers, which we consider as a proxy for the overall economic health of the country.
 This means that the drop, rather than being related to meat price, is likely related to increased poverty following the 2008 economic crisis.
 									</p>
 								</div>
@@ -386,7 +379,7 @@ That beef shows the largest decline is then most likely related to the fact that
 									<header class="align-center">
 										<p>Analyse coverage of climate change in French media</p>
 									</header>
-									<p> 
+									<p>
 In this final section we look into the relation between meat consumption and climate change related coverage in two large French journals, Le Monde and Le Figaro. <br />
 -INTEREST ? <br />
 We can see that the journal coverage pattern is similar to the climage change interest.
@@ -417,14 +410,14 @@ On other hand, it does most likely does not drive in change in meat consumption,
 					<header class="align-center">
 						<p class="special">Conclusion</p>
 					</header>
-					<p style="text-align: center;">
+					<p style=" width:70%;margin-left:15%;text-align: justify; text-align-last: left;">
 
 Meat consumption is an important consideration to tackle climate change.
-We have looked into meat consumption in Europe and France, and its association with different factors that could impact consumption. We have made the following observations: <br />
+We have looked into meat consumption in Europe and France, and its association with different factors that could impact consumption. We have made the following observations: <br /><br />
 -DESCRIPTION FOR PART 1 <br />
--We have seen that wealth and economic considerations play a role in determining people's consumption, but mostly in the long term, and that a fast change in wealth does not quickly affect meat consumption <br />
--DESCRIPTION FOR PART 3 <br />
--That in France at least, meat consumption does not seem to be clearly related to interest in climate change <br />
+-We have seen that wealth and economic considerations play a role in determining people's consumption, but mostly in the <span class="meatTitle" style="color: #FF4464;">long term</span>, and that a fast change in wealth does not quickly affect meat consumption <br />
+-We have seen that in France, the drop in meat consumption in 2008 is more likely related to the <span class="meatTitle" style="color: #FF4464;">economic situation</span> than to the price of meat <br />
+-That in France at least, meat consumption does not seem to be related to interest in <span class="meatTitle" style="color: #FF4464;">climate change</span> <br />
 -That people's interest in climate change is fairly related to news coverage <br />
 
 					</p>
